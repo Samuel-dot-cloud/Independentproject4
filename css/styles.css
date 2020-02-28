@@ -130,8 +130,10 @@ body {
 
 .mission {
     text-align: center;
+    color: darkred;
 }
 
 .vision {
     text-align: center;
+    color: green;
 }
