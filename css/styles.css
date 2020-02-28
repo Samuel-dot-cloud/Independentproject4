@@ -137,3 +137,15 @@ body {
     text-align: center;
     color: green;
 }
+
+#ordertag {
+    text-align: center;
+    color: gold;
+}
+
+#orderpage {
+    background-image: url(../img/gettyimages-931624704-170667a.jpg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+}
