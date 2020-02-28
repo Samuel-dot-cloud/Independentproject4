@@ -5,12 +5,14 @@
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Pacifico;
+    font-size: 25px;
 }
 
 #yellow {
     color: yellow;
     text-align: center;
-    font-family: 'Oxanium', ;
+    font-family: Oxanium;
 }
 
 body {
@@ -151,7 +153,7 @@ body {
 }
 
 #contactpage {
-    background-image: url(../img/gettyimages-648845102-170667a.jpg);
+    background-image: url(../img/gettyimages-1151727202-170667a.jpg);
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,4 +241,9 @@ body {
 #color2 {
     text-align: center;
     color: chocolate;
+}
+
+#sectionc {
+    text-align: center;
+    color: floralwhite;
 }
