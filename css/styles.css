@@ -9,6 +9,8 @@
 
 #yellow {
     color: yellow;
+    text-align: center;
+    font-family: 'Oxanium', ;
 }
 
 body {
@@ -124,4 +126,12 @@ body {
 .active,
 .demo:hover {
     opacity: 1;
+}
+
+.mission {
+    text-align: center;
+}
+
+.vision {
+    text-align: center;
 }
