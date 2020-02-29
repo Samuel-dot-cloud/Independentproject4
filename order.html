@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
+
 
     <style>
         /* width */
@@ -30,6 +34,52 @@
             background: #b30000;
         }
     </style>
+    <style>
+        body {
+            font-family: Macondo Swash Caps;
+        }
+        
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+        
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+        
+        .flip-box-back {
+            background-color: #555;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
 
 
 </head>
@@ -51,7 +101,90 @@
         </ul>
         <br><br>
         <h1 id="ordertag">CHOOSE YOUR PIZZA AND ORDER NOW!!</h1>
-    </div>
+        <br><br>
+        <div class="row">
+            <div class="columnod">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./img/gettyimages-184969517-170667a.jpg" alt="" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Option one:</h2>
+                            <p>Marinara pizza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnod">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./img/gettyimages-522114976-170667a.jpg" alt="" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Option two:</h2>
+                            <p>Margherita pizza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnod">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./img/gettyimages-185250793-170667a.jpg" alt="" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Option three:</h2>
+                            <p>Calzone pizza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="columnod">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="./img/gettyimages-621370754-170667a.jpg" alt="" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Option four:</h2>
+                                <p>Stromboli pizza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columnod">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="./img/gettyimages-489809469-170667a.jpg" alt="" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Option five:</h2>
+                                <p>Neapolitan pizza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columnod">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="./img/gettyimages-1187891919-170667a.jpg" alt="Paris" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Option six:</h2>
+                                <p>Deep Dish pizza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

@@ -12,7 +12,7 @@
 #yellow {
     color: yellow;
     text-align: center;
-    font-family: Oxanium;
+    font-family: Trade Winds;
 }
 
 body {
@@ -133,20 +133,25 @@ body {
 .mission {
     text-align: center;
     color: green;
+    font-family: Amatic SC;
+    font-size: 40px;
 }
 
 .vision {
     text-align: center;
     color: green;
+    font-family: Amatic SC;
+    font-size: 40px;
 }
 
 #ordertag {
     text-align: center;
     color: gold;
+    font-family: Orbitron;
 }
 
 #orderpage {
-    background-image: url(../img/gettyimages-931624704-170667a.jpg);
+    background-image: url(../img/gettyimages-992337948-170667a.jpg);
     background-repeat: no-repeat;
     background-color: white;
     background-size: cover;
@@ -162,7 +167,8 @@ body {
 .end1 {
     text-align: center;
     color: greenyellow;
-    font-family: 'Oxanium', ;
+    font-family: Oxanium;
+    font-size: 25px;
 }
 
 
@@ -232,6 +238,8 @@ body {
 #endt1 {
     text-align: center;
     color: gold;
+    font-family: Patrick Hand SC;
+    font-size: 50px;
 }
 
 .end3 {
@@ -241,9 +249,16 @@ body {
 #color2 {
     text-align: center;
     color: chocolate;
+    font-family: Finger Paint;
 }
 
 #sectionc {
     text-align: center;
     color: floralwhite;
+}
+
+.columnod {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
