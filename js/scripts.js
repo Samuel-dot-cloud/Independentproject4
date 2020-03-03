@@ -39,19 +39,27 @@ function Condiment(size, crust, topping) {
     this.crust = crust;
     this.topping = topping;
 }
-var size = { "Small", "Medium", "Large" };
-var crust = { "New haven style", "St.Louis style", "Silician" };
-var topping = { "Ham and pineapple", "Bacon and shrimp", "Chicken fajita" };
+var size = {
+    Small: "300 ",
 
-let size(0) = 300;
-let size(1) = 300;
-let size(2) = 500;
-let crust(0) = 100
-let crust(1) = 100;
-let crust(2) = 100;
-let topping(0) = 200;
-let topping(1) = 200;
-let topping(2) = 300;
+    Medium: "300 ",
+
+    Large: "500 "
+};
+var crust = {
+    New haven style: "100 ",
+
+    StLouis style: "100 ",
+    Silician: "100 "
+};
+var topping = {
+    Ham and pineapple: "
+    200 ", 
+    Bacon and shrimp: "200 ",
+
+    Chicken fajita: "300 "
+};
+
 
 // UI logic/
 $(document).ready(function() {
