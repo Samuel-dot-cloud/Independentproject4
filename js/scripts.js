@@ -29,91 +29,125 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-function Pizza(pizza) {
-    this.pizza = pizza;
-    this.condiments = [];
+// function Pizza(pizza) {
+//     this.pizza = pizza;
+//     this.condiments = [];
+// }
+
+// function Condiment(size, crust, topping) {
+//     this.size = size;
+//     this.crust = crust;
+//     this.topping = topping;
+// }
+// var size = {
+//     Small: "300 ",
+
+//     Medium: "300 ",
+
+//     Large: "500 "
+// };
+// var crust = {
+//     New haven style: "100 ",
+
+//     StLouis style: "100 ",
+//     Silician: "100 "
+// };
+// var topping = {
+//     Ham and pineapple: "
+//     200 ", 
+//     Bacon and shrimp: "200 ",
+
+//     Chicken fajita: "300 "
+// };
+
+
+// // UI logic/
+// $(document).ready(function() {
+//             $("#add-pizza").click(function() {
+//                 $("newpizza").append('<div class="form-group">' +
+//                     '<label for="sepizza">Select pizza.</label>' +
+//                     ' <select id="sepizza" name="pizza"></select>' +
+//                     '<option hidden>Pizza name.</option>' +
+//                     '<option value="onep">Marinara @ kshs.600</option>' +
+//                     '<option value="twop">Margherita @ kshs.600</option>' +
+//                     '<option value="threep">Calzone @ kshs.300</option>' +
+//                     '<option value="fourp">Stromboli @ kshs.400</option>' +
+//                     '<option value="fivep">Neapolitan @ kshs.500</option>' +
+//                     '<option value="sixp">Deep dish @ kshs.500</option>' +
+//                     '</select>' +
+//                     '</div>' +
+//                     '<div class="form-group">' +
+//                     '<label for="sesize">Select size.</label>' +
+//                     '<select id="sesize" name="size">' +
+//                     '<option hidden>Pizza size.</option>' +
+//                     ' <option value="onesize">Small @ kshs.300</option>' +
+//                     '<option value="twosize">Medium @ kshs.300</option>' +
+//                     '<option value="threesize">Large @ kshs.500</option>' +
+//                     '</select>' +
+//                     ' </div>' +
+//                     '<div class="form-group">' +
+//                     '<label for="secrust">Select crust.</label>' +
+//                     '<select id="secrust" name="crust">' +
+//                     '<option hidden>Pizza crust.</option>' +
+//                     '<option value="onecru ">New haven style @ kshs.100</option>' +
+//                     '                    <option value="twocru ">St.Louis style @ kshs.100</option>' +
+//                     '<option value="threecru ">Silician @ kshs.100</option>' +
+//                     '</select>' +
+//                     '</div>' +
+//                     '<div class="form-group">' +
+//                     '<label for="setop">Select topping.</label>' +
+//                     '<select id="setop" name="topping">' +
+//                     '<option hidden>Pizza topping.</option>' +
+//                     '<option value="onetop ">Ham and pineapple @ kshs.200</option>' +
+//                     '<option value="twotop ">Bacon and shrimp @ kshs.200</option>' +
+//                     ' <option value="threetop ">Chicken fajita @kshs.300</option>' +
+//                     '</select>' +
+//                     '</div>' +
+//                     '<div class="form-group">' +
+//                     '<input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>' +
+//                     '</div>');
+//             });
+//             $("form#newpizza").submit(function(event) {
+//                 event.preventDefault();
+//                 $(".form-group").each(function() {
+//                     var size = $(this).find("input.sesize").val();
+//                     var crust = $(this).find("input.secrust").val();
+//                     var topping = $(this).find("input.setop").val();
+//                     var quantity = $(this).find("input#number").val();
+//                     var newPizza = newPizza(inputtedSesize, inputtedSecrust, inputtedSetop, inputtedNumber)
+//                 })
+//             });
+function getSize() {
+    var selectedValue = document.getElementById("sesize").value;
+    return parseInt(selectedValue);
 }
 
-function Condiment(size, crust, topping) {
-    this.size = size;
-    this.crust = crust;
-    this.topping = topping;
+function getCrust() {
+    var selectedCrust = document.getElementById("secrust").value;
+    return parseInt(selectedCrust);
 }
-var size = {
-    Small: "300 ",
 
-    Medium: "300 ",
+function getToppings() {
+    var selectedToppings = document.getElementById("setop").value;
+    return parseInt(selectedToppings);
+}
 
-    Large: "500 "
-};
-var crust = {
-    New haven style: "100 ",
+function getService() {
+    var service = document.getElementById("sedel").value;
+    return parseInt(service);
+}
 
-    StLouis style: "100 ",
-    Silician: "100 "
-};
-var topping = {
-    Ham and pineapple: "
-    200 ", 
-    Bacon and shrimp: "200 ",
+function selectPizza() {
+    var pizza = document.getElementById("sepizza").value;
+    return parseInt(pizza);
+}
 
-    Chicken fajita: "300 "
-};
+function getQuantity() {
+    var selectedQuantity = document.getElementById("number").value;
+    return parseInt(selectedQuantity);
+}
 
-
-// UI logic/
-$(document).ready(function() {
-            $("#add-pizza").click(function() {
-                $("newpizza").append('<div class="form-group">' +
-                    '<label for="sepizza">Select pizza.</label>' +
-                    ' <select id="sepizza" name="pizza"></select>' +
-                    '<option hidden>Pizza name.</option>' +
-                    '<option value="onep">Marinara @ kshs.600</option>' +
-                    '<option value="twop">Margherita @ kshs.600</option>' +
-                    '<option value="threep">Calzone @ kshs.300</option>' +
-                    '<option value="fourp">Stromboli @ kshs.400</option>' +
-                    '<option value="fivep">Neapolitan @ kshs.500</option>' +
-                    '<option value="sixp">Deep dish @ kshs.500</option>' +
-                    '</select>' +
-                    '</div>' +
-                    '<div class="form-group">' +
-                    '<label for="sesize">Select size.</label>' +
-                    '<select id="sesize" name="size">' +
-                    '<option hidden>Pizza size.</option>' +
-                    ' <option value="onesize">Small @ kshs.300</option>' +
-                    '<option value="twosize">Medium @ kshs.300</option>' +
-                    '<option value="threesize">Large @ kshs.500</option>' +
-                    '</select>' +
-                    ' </div>' +
-                    '<div class="form-group">' +
-                    '<label for="secrust">Select crust.</label>' +
-                    '<select id="secrust" name="crust">' +
-                    '<option hidden>Pizza crust.</option>' +
-                    '<option value="onecru ">New haven style @ kshs.100</option>' +
-                    '                    <option value="twocru ">St.Louis style @ kshs.100</option>' +
-                    '<option value="threecru ">Silician @ kshs.100</option>' +
-                    '</select>' +
-                    '</div>' +
-                    '<div class="form-group">' +
-                    '<label for="setop">Select topping.</label>' +
-                    '<select id="setop" name="topping">' +
-                    '<option hidden>Pizza topping.</option>' +
-                    '<option value="onetop ">Ham and pineapple @ kshs.200</option>' +
-                    '<option value="twotop ">Bacon and shrimp @ kshs.200</option>' +
-                    ' <option value="threetop ">Chicken fajita @kshs.300</option>' +
-                    '</select>' +
-                    '</div>' +
-                    '<div class="form-group">' +
-                    '<input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>' +
-                    '</div>');
-            });
-            $("form#newpizza").submit(function(event) {
-                        event.preventDefault();
-                        $(".form-group").each(function() {
-                            var size = $(this).find("input.sesize").val();
-                            var crust = $(this).find("input.secrust").val();
-                            var topping = $(this).find("input.setop").val();
-                            var quantity = $(this).find("input#number").val();
-                            var newPizza = newPizza(inputtedSesize, inputtedSecrust, inputtedSetop, inputtedNumber)
-                        })
-                    }
+function getTotalAmount() {
+    var totalAmount = (selectPizza() + getSize() + getCrust() + getService() + getToppings()) * getQuantity();
+    alert(" The total amount is " + (totalAmount) + "" + " Thank you for choosing us.");
+}
