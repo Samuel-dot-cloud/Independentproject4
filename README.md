@@ -1,16 +1,16 @@
 # PROJECT NAME.
 The project is titled "Pizza Mojo". For more information, check out https://samuel-dot-cloud.github.io/Independentproject4/index.html
 ## PROJECT DESCRIPTION.
-The project is basically a website that allows one to order a pizza online by choosing the name, size, crust, topping, then place an order and see the charge at the end of the transaction, with another option of choosing as many pizzas as one wants, hence being very convenient. :satisfied:
+The project is basically a website that allows one to order a pizza online by choosing the name, size, crust, topping, then place an order and see the charge at the end of the transaction, with another option of choosing as many pizzas as one wants, hence being very convenient. :satisfied: :satisfied: :satisfied:
 ### AUTHOR'S INFORMATION.
 My name is Samuel and i am currently a software development student at Moringa School.
 #### SETUP INSTRUCTIONS.
 In order to develop and initiate the app, the following essentials are required:
-*HTML.
-*CSS.
-*Bootstrap.
-*Jquery.
-JavaScript.
+*HTML
+*CSS
+*Bootstrap
+*Jquery
+*JavaScript
 One is also required to have coding software such as Visual Studio Code or Atom, which can be found in the following links respectively:[visual studio](https://code.visualstudio.com/download) and [atom](https://linuxize.com/post/how-to-install-atom-text-editor-on-ubuntu-18-04/).
 #### BDD
 Behaviour|Input example|Output example
