@@ -1,4 +1,4 @@
-var slideIndex = 1;
+var slideIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -39,6 +39,20 @@ function Condiment(size, crust, topping) {
     this.crust = crust;
     this.topping = topping;
 }
+var size = { "Small", "Medium", "Large" };
+var crust = { "New haven style", "St.Louis style", "Silician" };
+var topping = { "Ham and pineapple", "Bacon and shrimp", "Chicken fajita" };
+
+let size(0) = 300;
+let size(1) = 300;
+let size(2) = 500;
+let crust(0) = 100
+let crust(1) = 100;
+let crust(2) = 100;
+let topping(0) = 200;
+let topping(1) = 200;
+let topping(2) = 300;
+
 // UI logic/
 $(document).ready(function() {
             $("#add-pizza").click(function() {
@@ -88,10 +102,10 @@ $(document).ready(function() {
             $("form#newpizza").submit(function(event) {
                         event.preventDefault();
                         $(".form-group").each(function() {
-                                var size = $(this).find("input.sesize").val();
-                                var crust = $(this).find("input.secrust").val();
-                                var topping = $(this).find("input.setop").val();
-                                var quantity = $(this).find("input#number").val();
-                                var newPizza = newPizza(inputtedSesize, inputtedSecrust, inputtedSetop, inputtedNumber)
-                            }
-                        }
+                            var size = $(this).find("input.sesize").val();
+                            var crust = $(this).find("input.secrust").val();
+                            var topping = $(this).find("input.setop").val();
+                            var quantity = $(this).find("input#number").val();
+                            var newPizza = newPizza(inputtedSesize, inputtedSecrust, inputtedSetop, inputtedNumber)
+                        })
+                    }
